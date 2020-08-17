@@ -1,5 +1,9 @@
 
 /* Header Section */
+
+body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRGSaQr506oTcGEu8wWDF9itWZfM7TMcPfRKA&usqp=CAU');
+}
  
 * {
     margin: 0;
@@ -139,7 +143,7 @@
     width: 95%; 
     vertical-align: center;
     overflow: hidden;
-    bottom: -7rem; 
+    bottom: -7rem;  
     top: 30;
     margin-left: 10em; 
     margin-right: 10em;  
@@ -187,9 +191,9 @@
 
  .heading {
     float: left; 
-    margin-top: 5em;
-    margin-bottom: 8;
-    padding-left: 10em;
+    margin-top: 5em;  
+    margin-bottom: 8; 
+    padding-left: 2rem; 
     line-height: 2.5em;
  }
 
@@ -212,6 +216,7 @@
     margin: 1em;
     float: left;
     line-height: 2em;
+    padding-left: 0;
 
  }
 
@@ -230,7 +235,69 @@
 /* Information Section  */
 
  .styling_bg {
-     color: #000000;
+    color: #000000;
+    background-color: #ffffff;
+    height: 40vh;
+    width: 20rem;
+    float: right;
+    margin: 5.7rem; 
+    margin-top: 11rem; 
+    padding: 3.5rem; 
+    line-height: 3rem;
+    text-align: center;
+ }
+
+ .icon {
+    padding: 2rem; 
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+ }
+
+ .numerals {
+    font-style: italic; 
+    letter-spacing: 2.5px;
+    color: black;
+    font-weight: bold;
+ }
+
+ .text_style {
+   letter-spacing: 1px;
+   color: #e47070d0; 
  }
 
  /* End Information Section */
+
+  /* Quality Section */
+
+ .quality {
+    margin: 9rem;     
+    text-align: center; 
+    margin-right: 18rem; 
+    margin-left: 18rem; 
+    line-height: 3rem;
+ }
+
+ .text_h2 h2{
+    color: #f37f3cb0;
+    font-family: 'Dancing Script';
+    margin-right: 18rem; 
+    margin-left: 18rem;  
+    text-align: center;
+    font-style: italic; 
+    font-size: 1.7rem;
+    
+ }
+
+ .text_h1 h1 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem; 
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+ }
+
+
+ /* .img_quality { 
+
+ }
+ /* End Quality Section */

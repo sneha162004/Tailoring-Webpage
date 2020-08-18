@@ -2,7 +2,7 @@
 /* Header Section */
 
 body {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRGSaQr506oTcGEu8wWDF9itWZfM7TMcPfRKA&usqp=CAU');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRGSaQr506oTcGEu8wWDF9itWZfM7TMcPfRKA&usqp=CAU');  
 }
  
 * {
@@ -269,13 +269,15 @@ body {
 
   /* Quality Section */
 
- .quality {
-    margin: 9rem;     
-    text-align: center; 
+ .quality { 
+    margin: 9rem;      
+    text-align: center;   
     margin-right: 18rem; 
     margin-left: 18rem; 
-    line-height: 3rem;
- }
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    line-height: 3rem; 
+ } 
 
  .text_h2 h2{
     color: #f37f3cb0;
@@ -296,8 +298,45 @@ body {
     letter-spacing: .4rem;
  }
 
-
- /* .img_quality { 
-
- }
  /* End Quality Section */
+
+  /* Image & Text Section  */
+
+  .wrapper_img {
+    background-color: #2e2b2b;
+    position: absolute;   
+  }
+ 
+ .wrapper { 
+    display: flex;    
+    width: 20%;
+    height: 100%;
+    margin: 4rem;
+    margin-left: 5rem; 
+ }
+
+ .img_1 {
+    margin-right: 1.5rem;
+ }
+
+ .text_styling {
+   font-size: small;
+   font-family: 'Courier New', Courier, monospace;
+   color: #7a7878;
+   display: flex;  
+   margin: 1rem;   
+   margin-bottom: 25rem;  
+   margin-top: -3rem;  
+   text-align: center; 
+}
+
+.h2_styling {
+    margin-right: 1.5rem; 
+    margin-left: 7rem;   
+}
+
+/*  End Image & Text Section  */
+ 
+
+
+ 

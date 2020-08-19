@@ -267,7 +267,7 @@ body {
 
  /* End Information Section */
 
-  /* Quality Section */
+  /* Heading Section */
 
  .quality { 
     margin: 9rem;      
@@ -275,7 +275,7 @@ body {
     margin-right: 18rem; 
     margin-left: 18rem; 
     margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 15rem;
     line-height: 3rem; 
  } 
 
@@ -298,13 +298,13 @@ body {
     letter-spacing: .4rem;
  }
 
- /* End Quality Section */
+ /* End heading Section */
 
   /* Image & Text Section  */
 
   .wrapper_img {
     background-color: #2e2b2b;
-    position: absolute;   
+    position: absolute; 
   }
  
  .wrapper { 
@@ -312,7 +312,8 @@ body {
     width: 20%;
     height: 100%;
     margin: 4rem;
-    margin-left: 5rem; 
+    margin-left: 5rem;
+    margin-top: -8rem;
  }
 
  .img_1 {
@@ -333,6 +334,30 @@ body {
 .h2_styling {
     margin-right: 1.5rem; 
     margin-left: 7rem;   
+}
+
+.button {
+   margin: 45rem;
+   margin-right: 20rem;
+   margin-bottom: 25rem;   
+   margin-top: 25rem; 
+}
+
+.button .btn{
+   position: absolute;
+   text-align: center;
+   background-color: #c98888;
+   border: transparent;
+   font-family: Raleway;
+   cursor: pointer;
+}
+
+.btn {
+   padding-right: 5rem;
+   padding-left: 5rem;
+   padding: 1rem; 
+   text-transform: uppercase;
+   letter-spacing: 0.2rem;
 }
 
 /*  End Image & Text Section  */

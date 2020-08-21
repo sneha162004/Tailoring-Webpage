@@ -164,19 +164,19 @@
 
 /* Home Section */
 
-.content {
+.contact-container {
   width: 50%;
   height: 50%;
   background-color: #313131;
   color: #ffffff;
   align-content: left;
   line-height: 1.5em;
-  margin-top: 9em;
-  margin-left: 3em;
-  margin-bottom: 6rem;
+  margin-top: 9em; 
+  margin-left: 3em; 
+  margin-bottom: 6rem; 
   padding: 3em;
   float: left;
-  font-family: Raleway;
+  font-family: Raleway; 
 }
 
 .heading {
@@ -187,7 +187,7 @@
   line-height: 2.5em;
 }
 
-.heading h1 {
+. {
   font-family: Alat;
   font-size: 2rem;
   letter-spacing: 2.5px;

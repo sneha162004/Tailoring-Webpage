@@ -36,17 +36,6 @@ body {
     margin: 0 auto;
 }
 
-.logo_container {
-    height: 100%;
-    display: block;
-    float: left;
-}
-
-.logo_container img {
-    position: relative; 
-    height: 80px;
-    margin-top: .5rem;
-}
 
 .logo_container h1 {
     position: absolute;

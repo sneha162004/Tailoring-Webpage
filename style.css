@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 body { 
@@ -48,29 +49,52 @@ a {
   left: 0;
   top: 0;
   width: 100vw;
-  height: auto;
+  font-family: monospace;
 }
-.navbar-container {
-  background-color: rgba(73, 72, 72, 0.63); 
-  color: rgba(251, 254, 255, 0.918);
-  padding: 2rem 10rem;
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
+nav{
+  background-color: #2e2b2b;
+  height: 80px;
+  width: 100%;
 }
-.nav-contents a {
-  font-size: 1.2rem;
-  margin-right: 1rem;
-  cursor: pointer; 
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
 }
-
-.nav-contents a:hover {
-  color: #fff;
-  text-decoration: underline;
+nav ul {
+  float: right;
+  margin-right: 20px;
 }
-
+nav ul li {
+  display: inline-block;
+  line-height: 30px;
+  margin: 28px 0;
+}
+nav ul li a {
+  font-size: 19px;
+  padding: 7px 13px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+ a:hover {
+  background-color: #666666;
+  transition: .5s;
+}
+.checkbtn {
+  font-size: 25px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 30px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
 /* Hero image */
-
 .hero-img {
   background-image: url("/img/7.jpg");
   background-size: cover;
@@ -79,9 +103,10 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  display: flex;
+  display: flex; 
   height: 100vh;
-}
+  top: 80px;
+} 
 
 .hero-img::after {
   position: absolute;
@@ -91,7 +116,7 @@ a {
   width: 100%;
   background-color: #000000;
   z-index: 1;
-}
+} 
 
 /* Greetings */
 .greet-container {
@@ -99,7 +124,7 @@ a {
 }
 .greet-contents {
   position: absolute;
-  top: -100px; 
+  top: -25px; 
   background-color: #fff;
   margin: 0 6rem; 
   padding: 0 3rem;
@@ -112,6 +137,12 @@ a {
 .greet-welcome {
   font-size: 3rem;
   letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.greet-welcome span {
+  font-size: 3rem;
+  letter-spacing: 8px;
+  color: palevioletred;
 }
 .greet-description {
   font-family: Roboto;
@@ -125,7 +156,7 @@ a {
   background-color: rgba(26, 24, 24, 0.829);
   width: 55%;
   margin: 6rem; 
-  margin-top: 12rem; 
+  margin-top: 20rem; 
   padding: 5rem;
   font-family: Raleway;
   line-height: 3rem; 
@@ -139,7 +170,7 @@ a {
     background-color: #fff;
     float: right;
     margin: 6rem;  
-    margin-top: 12.5rem;  
+    margin-top: 20.5rem;  
     padding: 3.5rem; 
     line-height: 3rem;
     text-align: center; 
@@ -157,7 +188,7 @@ a {
     text-align: center;   
     margin-right: 18rem; 
     margin-left: 18rem; 
-    margin-top: 50rem;
+    margin-top: 53rem;
     margin-bottom: 15rem;
     line-height: 3rem; 
  } 
@@ -194,7 +225,7 @@ a {
     position: absolute; 
   }
  
- .image {  
+ .image-1 {  
     display: flex;    
     width: 20%;
     height: 100%;
@@ -203,11 +234,11 @@ a {
     margin-top: -8rem;
  }
 
- .img-wrapper{ 
+ .image-1 img{ 
     margin-right: 1.5rem;
   } 
 
- .text-container {
+ .text-container-1 {
    font-size: small;
    font-family: 'Courier New', Courier, monospace;
    color: #7a7878;
@@ -218,37 +249,66 @@ a {
    text-align: center; 
 }
 
-.text {
+.text-wrapper {
+  margin-right: 1.5rem; 
+  margin-left: 7rem;   
+}
+
+.text-wrapper-1 {
+  margin-right: 1.5rem; 
+  margin-left: 7rem;   
+}
+
+.text-wrapper-2 {
+  margin-right: 1.5rem; 
+  margin-left: 7rem;   
+}
+
+.text-wrapper-3 {
   margin-right: 1.5rem; 
   margin-left: 7rem;   
 }
  /* Sub Container */
- .portfolio {
+ .sub-container-1 h4{
    color: #c9c5c5;
-   margin-top: 25rem;
+   margin-top: 22rem;
    bottom: -10.5rem;
    text-align: center;
-   font-size: 1.9rem;
+   font-size: 2.2rem;
    font: bold;
    text-transform: uppercase;
    letter-spacing: 0.4rem;
  }
- .sub-container {
+ .sub-container-1 {
   position: absolute; 
 }
 
-.hero-subcontainer {  
+.hero-subcontainer-1 {  
  display: flex; 
  margin-bottom: 15rem;
- margin-top: 10rem;
+ margin-top: 8rem;
 }
 
-.portfolio-img {
+.portfolio-wrapper-1 {
+  margin-right: -1rem;
+  margin-left: 2.8rem;
+}
+
+.portfolio-wrapper-2 {
   margin-right: -0.2rem;
   margin-left: 2.8rem;
 }
 
-.text-subcontainer {
+.portfolio-wrapper-3 {
+  margin-right: -0.2rem;
+  margin-left: 2.8rem;
+}
+
+.portfolio-wrapper-4 {
+  margin-right: -0.2rem;
+  margin-left: 2.8rem;
+}
+.text-subcontainer-1 {
   font-size: 1rem;
   font-family: 'Courier New', Courier, monospace;
   color: #7a7878;
@@ -258,7 +318,25 @@ a {
   letter-spacing: 0.1rem;
 }
 
-.protfolio-text {
+.portfolio-text {
+  margin-top: 1rem;     
+  margin-right: 4.5rem;  
+  margin-left:  4.5rem;     
+}
+
+.portfolio-text-1 {
+  margin-top: 1rem;     
+  margin-right: 4.5rem;  
+  margin-left:  4.5rem;     
+}
+
+.portfolio-text-2 {
+  margin-top: 1rem;     
+  margin-right: 4.5rem;  
+  margin-left:  4.5rem;     
+}
+
+.portfolio-text-3{
   margin-top: 1rem;     
   margin-right: 4.5rem;  
   margin-left:  4.5rem;     
@@ -315,7 +393,6 @@ a {
 
 .social-link {
   margin: 3rem;
-  margin-top: 7.5rem;
   float: left;
   position: absolute;
 }
@@ -323,11 +400,12 @@ a {
 .img-wrapper {
   display: flex;
   flex-direction: column;
-  line-height: 2rem;
-}
+  font-family: 'Courier New', Courier, monospace;
+  }
+
 
 .img-wrapper img {
-  margin: 1rem;
+  margin: 4.5rem 0 0 0;
 }
 
 .img-wrapper h5 {
@@ -420,5 +498,325 @@ textarea::placeholder {
 
 .btn:focus {
   background-color: #2796ff;
+} 
+
+/* media query for nav bar */
+@media screen and (max-width: 400px) {
+     label.logo {
+       font-size: 17px;
+       padding-left: 20px;
+     }
+     nav ul li a {
+       font-size: 1rem;
+     }
 }
+/* media query */
+@media screen and (max-width: 300px) {
+  .hero-container {
+     width: 100%;
+  }
+  label.logo {
+    font-size: 1rem;
+    padding-left: 20px;
+    white-space: normal;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 25%;
+    height: 80vh;
+    background: #666666;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li a{
+     font-size: 20px;
+  }
+  a:hover, a.active {
+    background: none;
+    color: #2e2b2b;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  /* greetings */
+ .greet-contents {
+    margin: 4rem 1.5rem 0 1.5rem;  /* top right bottom left */
+    padding: 0.4rem 1.3rem 2rem 1.3rem;
+  }
+
+  .greet-welcome {
+    font-size: 1.6rem;
+    letter-spacing: 6px;
+    margin-top: -2.2rem;
+  }
+  .greet-welcome span {
+    font-size: 1.6rem;
+    letter-spacing: 6px;
+    color: palevioletred;
+  }
+  .greet-description {
+    font-size: 1rem;
+    margin-top: -2.2rem;
+    padding-left: -10rem;
+  }
+  /* contact */
+  .contact-container {
+   width: 84%;
+   bottom: -43rem;
+   margin: 1.5rem; 
+   height: 40%;
+   padding: 1.5rem 0 0 1rem; 
+   line-height: 1.5rem;
+  }
+  .contact-container h1{
+    font-size: 1.2rem;
+  }
+  .contact-container h5{
+    font-size: 1rem;
+    margin: 0.1rem 0 0.1rem 0;
+  }
+  .info li, span {
+    line-height: 1.6rem;
+    letter-spacing: 0.2px;
+    font-size: 0.7rem;
+  }
+  .info span {
+    margin: 9px -5px 9px -7.8px;
+  }
+  h3 {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: -8rem;
+  }
+  /* info */
+  .info-container {
+    width: 85%;
+    height: 50%;
+    top: 200px;
+    margin: 1.5rem; 
+    margin-top: 740px;   
+    padding: 1rem 1rem 1rem 1rem; 
+    line-height: normal;
+   }
+   .contact-info img{
+     width: 25%;
+     height: 20%;
+     margin-bottom: 1.5rem;
+    }
+    .contact-info h4 {
+      font-size: 1.2rem;
+    }
+    .contact-info h3 {
+      font-size: 1.3rem;
+    }
+    /* container */
+    .container_text {
+     margin: 900px 0 -50px -255px;
+   }
+    .container_text span {
+      margin: 900px 0 0 -38px;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+    .container_heading h1{
+      margin: 19px 0 0 -29px;
+      font-size: 2rem;
+      line-height: normal;
+    }
+    /* services */
+    .services {
+        font-size: 1.6rem;
+        letter-spacing: 0.3rem;
+        line-height: normal;
+        margin: 40px 0 0 -29px; 
+        font-weight: bold;
+        white-space: nowrap;
+        color: #202027;
+    }
+    .image-container {
+      width: 100%;
+    }
+    .image {
+      flex-direction: column;
+      width: 60%;
+    }
+    .img-wrapper-h1 {
+      margin: 0 -20px 70px -24px;
+      height: 35vh;
+    }
+    .img-wrapper-h2 {
+      margin: 0 -20px 70px -24px;
+      width: 25vh;
+      height: 35vh;
+    }
+    .img-wrapper-h3 {
+      margin: 0 -20px 70px -24px;
+      width: 25vh;
+      height: 35vh;
+    }
+    .img-wrapper-h4 {
+      position: absolute;
+      margin: 57rem -20px 80px -34px; 
+      text-align: center;
+      width: 28vh;
+      height: 36vh;
+     }
+     .text-container {
+       position: absolute;
+       flex-direction: row;
+       color: #7a7878;
+       white-space: nowrap;
+      }
+      .text-1 {
+       margin: -675px 20px 70px 10px;
+       text-align: center;
+      }
+     .text-2 {
+      margin: -370px 0 950px -265px;
+      text-align: center;
+    }
+    .text-3 {
+      margin: -60px 0 -3px -255px;
+      text-align: center;
+    }
+    .text-4 {
+      position: absolute;
+      white-space: normal;
+      margin: 250px -9.5px -150px -8px;
+      text-align: center;
+    }
+    /* portfolio */
+    .sub-container {
+      color: black;
+      margin: 450px 0 -900px 0;
+    }
+    .sub-container h4 {
+      margin: 700px -55px -400px 60px;
+      font-size: 2.3rem;
+      font-family: Dancing Script;
+    }
+    .hero-subcontainer {
+      background-color: #2e2b2b;
+      width: 43vh;
+      flex-direction: column;
+      margin: 35rem 0 20rem 0;
+    } 
+    .portfolio-img-1 {
+      width: 35vh;
+      height: 35vh;
+      margin: -7rem 0.5rem 0 1.5rem;
+    }
+    .portfolio-img-2 {
+      width: 35vh;
+      height: 35vh;
+      margin: 4rem 1rem 0 1.5rem;
+    }
+    .portfolio-img-3 {
+      width: 35vh;
+      height: 35vh;   
+      margin: 4rem 1rem 0 1.5rem;
+    }
+    .portfolio-img-4 {
+      width: 35vh;
+      height: 35vh;
+      margin: 4rem 1rem -8rem 1.6rem;  
+    }
+    .text-subcontainer {
+      flex-direction: row;
+      color: #7a7878;
+      white-space: nowrap;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    .portfolio-text-1 {
+      margin: -820px -50px -30px 34px;
+    }
+    .portfolio-text-2 {
+      margin: -525px 300px -32px -140px;
+    }
+    .portfolio-text-3 {
+      margin: -223px 95rem 50px -523px;
+    }
+    .portfolio-text-4 {
+      margin: 5rem 495rem 300px -109rem;
+    }
+    /* about */
+    .about {
+      top: 285rem;
+      margin: 2rem 0 2rem 0.9rem;
+      width: 38vh;
+      height: 105vh;
+    }
+    .about h1 {
+      font-size: 2.2rem;
+    }
+    .about p {
+      font-size: 1.2rem;
+      top: 0.7rem;
+      padding: 0.5rem 0.3rem -0.2rem 0.3rem;
+    }
+    /* form */
+    .form-container {
+       top: 337rem;
+       width: 90%;
+       height: 85vh;
+       background-image: url(img\icon11.jpg);
+       margin: 0 1rem 0 0.8rem;
+       flex-direction: column;
+      }
+      .form-container h1 {
+        font-size: 1.7rem;
+        margin: 0 2rem 0 -1.2rem;
+        line-height: 1rem;
+        white-space: nowrap;
+      }
+      .form-container p {
+       font-size: 1.1rem;
+       white-space: pre;
+       margin: -0.3rem 2rem 0 -3.2rem;
+       line-height: 1.6rem;
+       width: 40%;
+      }
+      .responsive-img {
+        margin: 7rem 0 -3rem -6rem;
+        font-size: 1rem;
+        font-family: 'Courier New', Courier, monospace
+      }
+      .responsive-img img {
+        margin: 1.2rem 0 0 0.6rem;
+      }
+      .responsive-img h5 {
+        margin: 0.6rem 0 0 1rem;
+      }
+      
+      /* responsive form */
+      .join-form {
+          width: 43vh;
+          height: 90vh;
+          max-width: inherit;
+          margin: 30rem -4rem -18rem 3rem;
+      }
+      .input-group label {
+        margin: 0 0 0 -2rem;
+      }
+      .input-group input {
+        margin: 0 0 0 -1rem;
+      }
+      textarea {
+        margin: 0 0 0 -1rem;
+        white-space: nowrap;
+      }
+}
+
 

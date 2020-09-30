@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
       rel="stylesheet"
@@ -16,18 +18,21 @@
   <body>
     <!-- Navbar  -->
     <div id="home">
-    <div class="navbar">  
-    <div class="navbar-container">
-      <div class="logo">
-        <h1>Fashion Tailor</h1>
-      </div>
-      <div class="nav-contents">
-        <a href="#home">Home</a>
-        <a href="#services">Our Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact Us</a>
-      </div>
+      <div class="navbar">
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+           <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Fashion Tailor</label>
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#services">Our Services</a></li>
+           <li><a href="#portfolio">Portfolio</a></li> 
+           <li><a href="#about">About Us</a></li> 
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
     </div>
   </div>
     <!-- Hero image -->
@@ -37,7 +42,7 @@
     <!-- Greetings / Welcome -->
    <div class="greet-container">     
       <div class="greet-contents">
-        <h2 class="greet-welcome">WELCOME</h2>
+        <h2 class="greet-welcome">Wel<span>c</span>ome</h2>
         <h5 class="greet-description">
           Fashion Tailor is a full service specializes in Wedding designs
           Blouse, Alterations, Stylishdress & blouse, BeadWork for blouse &
@@ -91,7 +96,8 @@
       <div class="container_heading"> 
         <div id="services">
        <span>
-         Meticulous attention to detail</span> 
+         Meticulous attention to detail
+        </span> 
         <h1>
           Amazing Quality</h1>
         </div>
@@ -100,44 +106,45 @@
     </div>
   </div>
 <!-- Image -->
-  <div class="image-container">   
-   <div class="image"> 
-    <img class="img-wrapper"src="img\1.jpg"  width="104%" height="100%"> 
-    <img class="img-wrapper" src="img\12.jpg"  width="120%" height="100%">
-    <img class="img-wrapper" src="img\4.jpg" width="120%" height="100%">
-    <img class="img-wrapper" src="img\7.jpg"   width="84%" height="100%">
+  <div class="image-container image-container-1"> 
+   <div class="image image-1"> 
+    <img class="img-wrapper-h1" src="img\1.jpg"  width="104%" height="100%">
+    <img class="img-wrapper-h2" src="img\12.jpg"  width="120%" height="100%">
+    <img class="img-wrapper-h3" src="img\4.jpg" width="120%" height="100%">
+    <img class="img-wrapper-h4" src="img\7.jpg"   width="84%" height="100%">
   </div> 
-    <div class="text-container">
-   <h5 class="text">
-     Bead and lace experts</h5>
-   <h5 class="text">
-     Handworks and machineworks</h5> 
-   <h5 class="text">
+    <div class="text-container text-container-1">
+   <h5 class="text-1 text-wrapper">
+     Bead and lace experts</h5> 
+   <h5 class="text-2 text-wrapper-1">
+     Handworks & machineworks</h5> 
+   <h5 class="text-3 text-wrapper-2">
      Wedding Designs blouses</h5> 
-   <h5 class="text">
-     Design Handwork for Weddings</h5>
+    <h5 class="text-4 text-wrapper-3">
+     Design Handwork for Weddings</h5> 
   </div>
 </div>
 </div>
  <!-- sub-container -->
-<div class="sub-container">
-  <h4 class="portfolio">Our Work</h4>
-   <div class="hero-subcontainer">
-    <img class="portfolio-img" src="img\5.jpg"  width="19.5%" height="50%"> 
-    <img class="portfolio-img" src="img\img6.jpg"  width="22%" height="50%">
-    <img class="portfolio-img" src="img\img.jpeg" width="22%" height="50%">
-    <img class="portfolio-img" src="img\img11.jpg"   width="22%" height="50%">
+<div class="sub-container sub-container-1">
+  <h4>Our Work</h4>
+   <div class="hero-subcontainer hero-subcontainer-1">
+    <img class="portfolio-img-1 portfolio-wrapper-1" src="img\5.jpg"  width="19.5%" height="50%"> 
+    <img class="portfolio-img-2 portfolio-wrapper-2" src="img\img6.jpg"  width="22%" height="50%">
+    <img class="portfolio-img-3 portfolio-wrapper-3" src="img\img.jpeg" width="22%" height="50%">
+    <img class="portfolio-img-4 portfolio-wrapper-4" src="img\img11.jpg"   width="22%" height="50%">
    </div>
-   <div class="text-subcontainer">
-    <h5 class="protfolio-text">
+   <div class="text-subcontainer text-subcontainer-1">
+    <h5 class="portfolio-text-1 portfolio-text">
       Wedding Dresses</h5>
-    <h5 class="protfolio-text">
+    <h5 class="portfolio-text-2 portfolio-text-1">
       Fancy blouses</h5> 
-    <h5 class="protfolio-text">
+    <h5 class="portfolio-text-3 portfolio-text-2">
      Long Qwons for Kids</h5> 
-    <h5 class="protfolio-text">
+    <h5 class="portfolio-text-4 portfolio-text-3">
       Pageant Dresses</h5>
    </div> 
+   
    <div id="about"></div>
  </div> 
  <div id="portfolio"></div>
@@ -155,37 +162,37 @@
     </p>
  </div>
 </div>
-
-  
-  <!-- Form -->
+<!-- Form -->
   <div class="form-container">
-    <h1 style= "font-family: Arial; float: left; font-size: 2rem; text-transform: uppercase;
+    <h1 style= "font-family: Arial; float: left; text-transform: uppercase;
     letter-spacing: 2px; line-height: 1.5rem;">
       Contact Us</h1>
-    <p style="font-size: 1.4rem; float: left; width: 50%;">
-      To book an appointment with Fashion Tailor?
-      Please use the contact information below,
-      or fill out our general inquiries form.</p>
+    <p style="float: left; width: 50%;">
+      To book an appointment with 
+      Fashion Tailor? Please use 
+      the contact information below,
+      or fill out our general inquiries
+      form.</p>
        <div class="social-link">
-         <div class="img-wrapper">
-        <img src="img\icon10.png" style="height: 13%; width: 13%;">
-        <h5 style="font-size: 1.2rem; font-family: 'Courier New', Courier, monospace">  
+         <div class="img-wrapper  responsive-img">
+        <img class="img-wrapper responsive-img" src="img\icon10.png" style="height: 12%; width: 12%;">
+        <h5 class="img-wrapper responsive-img">  
           974-121-1717</h5>
-          <img class= "img-wrapper" src="img\icon5.png" style="height: 10%; width: 10%;">
-          <h5 style="font-size: 1.2rem; font-family: 'Courier New', Courier, monospace">
+          <img class= "img-wrapper responsive-img" src="img\icon5.png" style="height: 10%; width: 10%;">
+          <h5 class="img-wrapper responsive-img">
            fashiontailor@gmail.com</h5>
-        <img class= "img-wrapper" src="img\icons8-address-50.png" style="height: 10%; width: 10%;">
-          <h5 style="font-size: 1.2rem; font-family: 'Courier New', Courier, monospace">
+        <img class="img-wrapper responsive-img" src="img\icons8-address-50.png" style="height: 10%; width: 10%;">
+          <h5 class="img-wrapper responsive-img">
             kp Agrahara,Banglore.</h5>
-            <img class= "img-wrapper" src="img\icon4.png" style="height: 10%; width: 10%;">
-            <h5 style="font-size: 1.2rem; font-family: 'Courier New', Courier, monospace">
+            <img class= "img-wrapper responsive-img" src="img\icon4.png" style="height: 10%; width: 10%;">
+            <h5 class="img-wrapper responsive-img">
               Follow us on instagram</h5>
              </div> 
     </div>
-    <div>
+    <!-- <div>  -->
     
       <!-- form-contact -->
-      <div id="contact"></div>
+       <div id="contact"></div>
       <form class="join-form">
         <div class="input-group">
             <label>Full Name:</label>
@@ -207,6 +214,6 @@
        <a>Send Message</a>
       </button>
  </form>
- </div>
+ </div> 
    </body>
 </html>
